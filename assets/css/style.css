@@ -13,6 +13,7 @@
     justify-content: center;
     text-align: center;
     align-content: center;
+
 }
 
 .message-header {
@@ -20,4 +21,17 @@
     color: hsl(0, 0%, 29%);
     border-radius: 4px;
     cursor: pointer;
+}
+
+.message-body p {
+    margin: 2px auto;
+}
+
+code {
+    margin: auto 15px;
+}
+
+.example-container{
+    margin-top: 20px;
+    font-weight: 600;
 }

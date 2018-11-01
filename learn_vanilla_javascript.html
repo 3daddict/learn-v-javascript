@@ -27,36 +27,102 @@
                     JavaScript Lessons
                 </h1>
                 <div class="field has-addons has-addons-centered">
-                    <div class="control has-icons-left">
+                    <div class="control has-icons-left is-expanded">
                         <input class="input" type="text" name="search" value="" placeholder="Search a Method">
                         <span class="icon is-small is-left">
                             <i class="fas fa-search"></i>
                         </span>
                     </div>
                     <div class="control">
-                        <a class="button is-info">
-                            Search
-                        </a>
+                        <a class="button is-info">Search</a>
                     </div>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="messageSection">
                 <article class="message">
                     <div class="message-header">
-                        <p>Hello World</p>
-                        <i class="expand-icon fas fa-sort-down" id="expandToggle"></i>
+                        <p>Create an Element on the DOM - .createElement()</p>
+                        <span class="expand-icon">
+                            <i class="fas fa-sort-down"></i>
+                        </span>
                     </div>
-                    <div class="message-body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>,
-                        tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
-                        gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>,
-                        in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id
-                        porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                    <div class="message-body" style="display: none">
+                        <p>
+                            <strong>.createElement()</strong> is a method used to create an Element Node with a declared name.
+                        </p>
+                        <p>For example let's say we want to create a button with some text. That's a total of two elements we need to create. The button and the text inside the buttom.</p>
+                        <p>Let's create the elements using the .createElement() methood.</p>
+                        <p><code>const newBtn = document.createElement("BUTTON");</code></p>
+                        <p><code>const btnText = document.createTextNode("createElement Button");</code></p>
+                        <p>Now lets assemble the element using the <strong>.appendChild()</strong>method.</p>
+                        <p><code><strong>newBtn</strong>.appendChild(<strong>btnText</strong>);</code></p>
+                        <p>Last lets display our newly created element on the DOM</p>
+                        <p><code>document.querySelector('.createElementDiv').appendChild(newBtn);</code></p>
+                        <div class="example-container">
+                            <p>Example:</p>
+                            <div class="createElementDiv"></div>
+                        </div>
                     </div>
                 </article>
+
+                <article class="message">
+                        <div class="message-header">
+                            <p>Create an Element on the DOM - .createElement()</p>
+                            <span class="expand-icon">
+                                <i class="fas fa-sort-down"></i>
+                            </span>
+                        </div>
+                        <div class="message-body" style="display: none">
+                            <p>
+                                <strong>.createElement()</strong> is a method used to create an Element Node with a declared name.
+                            </p>
+                            <p>For example let's say we want to create a button with some text. That's a total of two elements we need to create. The button and the text inside the buttom.</p>
+                            <p>Let's create the elements using the .createElement() methood.</p>
+                            <p><code>const newBtn = document.createElement("BUTTON");</code></p>
+                            <p><code>const btnText = document.createTextNode("createElement Button");</code></p>
+                            <p>Now lets assemble the element using the <strong>.appendChild()</strong>method.</p>
+                            <p><code><strong>newBtn</strong>.appendChild(<strong>btnText</strong>);</code></p>
+                            <p>Last lets display our newly created element on the DOM</p>
+                            <p><code>document.querySelector('.createElementDiv').appendChild(newBtn);</code></p>
+                            <div class="example-container">
+                                <p>Example:</p>
+                                <div class="createElementDiv"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="message">
+                            <div class="message-header">
+                                <p>Create an Element on the DOM - .createElement()</p>
+                                <span class="expand-icon">
+                                    <i class="fas fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="message-body" style="display: none">
+                                <p>
+                                    <strong>.createElement()</strong> is a method used to create an Element Node with a declared name.
+                                </p>
+                                <p>For example let's say we want to create a button with some text. That's a total of two elements we need to create. The button and the text inside the buttom.</p>
+                                <p>Let's create the elements using the .createElement() methood.</p>
+                                <p><code>const newBtn = document.createElement("BUTTON");</code></p>
+                                <p><code>const btnText = document.createTextNode("createElement Button");</code></p>
+                                <p>Now lets assemble the element using the <strong>.appendChild()</strong>method.</p>
+                                <p><code><strong>newBtn</strong>.appendChild(<strong>btnText</strong>);</code></p>
+                                <p>Last lets display our newly created element on the DOM</p>
+                                <p><code>document.querySelector('.createElementDiv').appendChild(newBtn);</code></p>
+                                <div class="example-container">
+                                    <p>Example:</p>
+                                    <div class="createElementDiv"></div>
+                                </div>
+                            </div>
+                        </article>
+
             </section>
+
+            
         </div>
+
         <div class="column is-2">
 
 
@@ -69,6 +135,7 @@
         crossorigin="anonymous"></script>
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/footerBar.js"></script>
+    <script src="./functions/functions.js"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 
